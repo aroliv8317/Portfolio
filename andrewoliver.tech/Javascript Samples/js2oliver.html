@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Andrew's Starter File</title>
+		<style>
+			h1{
+				font-family:"Century Gothic";
+				font-style: italic;
+				border-bottom: 5px #0066FF solid;
+			}
+			p{
+				font-family: "Helvetica", serif;
+				
+			}
+			.link{
+				text-decoration:none;
+			}
+			a:visited{
+				color:#3399FF;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Fahrenheit to Celcius Converter</h1>
+		<p id="p1">
+			<a href="https://en.wikipedia.org/wiki/Fahrenheit" class="link">Fahrenheit temperature:</a>
+			<input type="text" id="temp1" onchange="convert()">
+			<input type="button" id="btn1" value="convert" onclick="convert()">
+		</p>	
+		<p>
+			<a href="https://en.wikipedia.org/wiki/Celsius" class="link">Celcius temperature:</a>
+			<input type="text" id="temp2">
+		</p id="p2">		
+		
+		
+		<script>
+			function convert(){
+				var num1,num2,num3,result;
+				num1= document.getElementById("temp1").value;
+				num2= 32;
+				num3= (5/9);
+				result= (num1-num2) * num3;
+				document.getElementById("temp2").value = result;	
+			}		
+		</script>
+	</body>
+</html>

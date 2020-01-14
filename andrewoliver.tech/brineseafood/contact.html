@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brine Seafood Shack</title>
+	<meta charset = "utf-8">
+	<link rel= "stylesheet" type = "text/css" href= "css/main.css">
+	<link rel= "stylesheet" type = "text/css" href= "css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+	<link rel="icon"
+			type="image/png"
+			href="images/brine-logo.png">
+</head>
+<div id="wrapper">
+<body>
+<header>
+<a href= "index.html"><img src = "images/brine-logo.png" alt = "Brine Logo" class = "brinelogo"></a>
+<nav>
+	<ul>
+		<li><span id="home"><a href="index.html">Home</a><span></li>
+		<li class="dropdown">
+			<a href= "javascript:void(0)" class="dropbtn">Menus</a>
+			<div class="dropdown-content">
+				<a href="images/dinnermenu.jpg" target="_blank">Dinner</a>
+				<a href="images/lunchmenu.jpg" target="_blank">Lunch</a>
+				<a href="images/kidsmenu.jpg" target="_blank">Kids</a>
+				<a href="images/winelist.jpg" target="_blank">Wine List</a>
+				
+			</div>
+		</li>
+		<li><a href= "gallery.html">Gallery</a></li>
+		<li><a href= "about.html">About Us</a></li>
+		<li><a href= "contact.html">Contact Us</a></li>
+		<li><a href= "shop.html">Gift Shop</a></li>
+	</ul>
+</nav>
+</header>
+<img src="images/contact.png" alt="contacts" class="contactsmap" usemap="#contactsmap">
+<map name="contactsmap">
+		<area shape="rect" coords="14,16,99,106" href="mailto:andrewroliver84@gmail.com" alt="Email">
+		<area shape="rect" coords="110,22,200,107" href="tel:4702262190" alt="Phone">
+		<area shape="rect" coords="213,17,297,106" href="https://twitter.com/brineseafood" alt="Twitter">
+		<area shape="rect" coords="311,19,399,105" href="https://www.google.com/maps/place/Brine+Seafood+Shack/@34.0708123,-84.2764068,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5758413b48cd7:0xf7828ae1cbced561!8m2!3d34.0708123!4d-84.2742181" alt="Directions">
+	</map>
+<section id = "contact">
+	<h1>For reservations or information please give us a call, shoot us an email, or simply click the botton to make a reservatin through Open Table.</h1>
+
+	<table cellspacing="10" cellpadding="5" id="contactinfo">
+		<tr>
+			<td>Phone:</td>
+			<td><span id="phone_number">(470) 226-2190</span><span id="mobile_number"><a href="tel:4702262790">(470) 226-2190</a></span></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td>700 Avalon Blvd<br>Alpharetta,GA 30009</td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><a href="mailto:andrewroliver84@gmail.com">info@sofried.com</a></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="reservation"><a href="https://www.opentable.com/r/brine-seafood-shack-alpharetta" target="_blank" class="button">Make A Reservation</a></td>
+		</tr>
+	</table>
+
+	<h4>Get Directions</h4>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.9493636983652!2d-84.27640678473067!3d34.070812280600926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5758413b48cd7%3A0xf7828ae1cbced561!2sBrine+Seafood+Shack!5e0!3m2!1sen!2sus!4v1509382643109" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+	<h3>Join our mailing list for information and offers!</h3>
+	<form action="http://webdevbasics.net/scripts/fishcreek.php" method="post">
+		<label for="myName">* Name:</label>
+		<input type="text" name="myName" required id="myName">
+		<label for="myEmail">* E-mail:</label>
+		<input type="email" name="myEmail" required id="myEmail">
+		<label for="myTel">Phone:</label>
+		<input type="tel" name="myTel" id="myTel">
+		<label for="myDate">Birthday:</label>
+		<input type="date" name="myDate" id="myDate">
+		<label for="myComments">Comments:</label>
+		<textarea rows="2" cols="20" name="myComments"></textarea>
+		<label for="myPreference">Prefered Contact:</label><br>
+		<input type="radio" name="myPreference" value="email" id="myPreference">Email<br>
+		<input type="radio" name="myPreference" value="phone" id="myPreference">Phone<br>
+		<input type="radio" name="myPreference" value="text" id="myPreference">Text
+
+		<input type="submit" id="mySubmit" name="mySubmit" value="Send Now">
+		<input type="reset" id="myReset" name="myReset" value="Reset">
+	</form>
+	<a href="#top" class="top">Back To The Top</a>
+	
+
+		
+</section>
+<button onclick="goBack()" class="previouspage">Previous Page</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script> <br>
+<footer>
+	<img src="images/Social_Caps.png" alt="social logos" class="social-icon" usemap="#socialmap">
+
+	<map name="socialmap">
+		<area shape="rect" coords="21,49,91,106" href="https://twitter.com/brineseafood" alt="Twitter">
+		<area shape="rect" coords="104,50,172,102" href="https://www.facebook.com/brineseafood" alt="Facebook">
+	</map>
+	<p>Copyright &copy; 2017 | By Andrew Oliver</p>
+	<img src="images/southern-fried-logo.jpg" alt="Chicken And The Egg" id="chicknegg"></a>
+	</div>
+</footer>
+</body>
+</div>
+
+
+</html>

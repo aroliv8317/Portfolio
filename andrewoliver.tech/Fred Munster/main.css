@@ -1,0 +1,248 @@
+#wrapper{
+	min-width: 768px;
+	max-width: 1024px;
+	width: 80%;
+	margin: auto;
+	background: white;
+}
+body{
+	background-image: url(images/spooky-background.jpg);
+	font-family: 'Cormorant SC', serif;
+}
+
+header{
+	background: #3b3b3b;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+
+}
+
+nav{
+	margin-bottom: 25px;
+	float: right;
+}
+
+nav li{
+	display:inline-block;
+	font-family: 'Cormorant SC', serif;
+}
+
+nav li a{
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 5px;
+	
+}
+
+nav a:link{
+	color: white;
+}
+
+nav a:visited{
+	color: white;
+}
+
+nav a:hover{
+	font-size: 150%;
+}
+
+
+.logo{
+	margin:15px;
+	text-align: center;
+}
+
+h1{
+	font-family:'Cormorant SC', serif;
+}
+
+main{
+	margin-top: 0;
+}
+.rightcolumn{
+	float: right;
+	width: 25%;
+	background: gray;
+	padding: 10px;
+	margin-right: 25px;
+
+}
+
+dt{
+	font-weight: bold;
+}
+.leftcolumn{
+	width: 60%;
+	margin-left: 25px;
+	margin-right: 15px;
+}
+
+ul{
+	list-style: none;
+}
+ul li a{
+	text-decoration:none;
+}
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	color: #111111;
+}
+
+#gallery li img{
+	max-height: 183px;
+	max-width: 276px;
+}
+#gallery li:nth-child(3){
+	clear: both;
+}
+
+.gallery{
+	text-align: center;
+}
+.link_box{
+	clear: both;
+	margin-left: 25px
+}
+
+.links a:link{
+	color: black;
+}
+
+.links a:visited{
+	color: black;
+}
+
+.links a:hover{
+	font-size: 150%
+}
+.contact{
+	font-size:25px;
+}
+
+.mobile_number{
+	display: none;
+}
+
+.mobile_contact{
+	display:none;
+}
+
+.top{
+	text-decoration: none;
+	margin-left: 25px;
+	background: gray;
+	padding: 10px;
+	border-radius: 300px;
+}
+
+.top:link{
+	color:black;
+}
+
+.top:visited{
+	color: black;
+}
+footer{
+	text-align: center;
+	font-size: 0.9em;
+	clear: both;
+}
+*{
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px){
+	body{
+		margin:0;
+		padding:0;
+		background-color: white;
+		background-image: none;
+	}
+
+	header{
+		background: #3b3b3b;
+	}
+
+	#wrapper{
+		width:auto;
+		min-width: 0;
+		margin:0;
+	}
+
+	nav{
+		float:none;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+
+	.logo{
+		display: none;
+	}
+
+	nav a{
+		display: block;
+		padding: 0.2em;
+		font-size: 1.3em;
+		border-bottom: 1px solid #330000;
+	}
+
+	nav ul{
+		text-align: center;
+	}
+
+	nav ul li{
+		display:block;
+	}
+
+	.rightcolumn{
+		float:none;
+		background:none;
+	}
+
+	.leftcolumn{
+		float:none;
+	}
+
+	#gallery{
+
+	}
+
+	#gallery li{
+		display:block;
+		float: none;
+
+	}
+
+	.contact{
+		display: none;
+	}
+
+	.mobile_number{
+		display: inline;
+	}
+
+	.mobile_contact{
+		display:inline;
+	}
+
+	h1{
+		font-size: 1.5em;
+		line-height: 120%;
+	}
+
+	footer{
+		margin: 15px;
+	}
+
+}

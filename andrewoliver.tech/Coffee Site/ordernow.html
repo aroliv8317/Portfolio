@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Coffee Orders</title>
+		<style>
+			body{
+				background-color: #FDD141;
+				font-family: "Times New Roman", Times, serif;
+				color: #A45B06
+			}
+			h1{
+				color: brown;
+				font-style: italic;
+				border-bottom: 5px #F28D18 solid;
+
+				text-shadow: 5px 5px 5px #F28D18;
+			}
+			h2{
+				color: brown;
+				font-family: "Helvetica", serif;
+				text-decoration: underline;
+			}
+			a:link{
+				color: brown;
+				text-decoration: none;
+			}
+			a:visited{
+				color: white;
+			}
+			a:hover{
+				color: #359FAF;
+				font-size: 20px;
+			}
+			a:active{
+				color: #359FAF;
+				font-size: 20px;
+			}
+			#top{
+				padding:0;
+				margin 10px;
+			}
+			#container{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			#footer{
+				background-color: F28D18;
+			}
+			.float_right{
+				float: right;
+			}
+			.photograph{
+				border: 20px #F28D18 solid;
+				box-shadow: 0 0 12px grey;
+			}
+			#navigation{
+				border-radius: 30px;
+				height: 45px;
+				background-color: #F28D18;
+			}
+			#navigation ul{
+				margin: 0;
+				list-style: none;
+			}
+			#navigation li{
+				float: left;
+				width: 30%;
+				padding: 10px;
+				text-align: center;
+			}
+			navigation a{
+				color: white;
+			}
+			.bean_banner{
+				box-shadow: 5px 5px 5px brown;
+				border-radius: 75px;
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function totalCost(){
+				var price = 12;
+				var roast, bags;
+				roast = document.getElementById("roastId").value;
+				bags = document.getElementById("numberOfBagsId").value;
+				if (roast == "Blonde Roast" || roast == "Dark Roast")
+					price = 15;
+				price = price * bags * 1.07;
+
+
+				document.getElementById("totalbox").value = price;
+			}
+		</script>
+
+		<div id="container">
+		<div id="top"></div>
+		<div id="navigation">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ordernow.html">Order Now</a></li>
+			<li><a href="directions.html">Directions</a></li>
+		</ul>
+		</div>
+		<h1>Order North Georgia Coffee</h1>
+		<h3>Select a Roast</h3>
+			<select id="roastId">
+				<option value="">Select a roast</option>
+				<option value="Blonde Roast">Blonde Roast</option>
+				<option value="Medium Roast">Medium Roast</option>
+				<option value="Dark Roast">Dark Roast</option>
+			</select>
+			<br>
+			<img src="images/coffee_mug_outline.jpg" alt="Coffee Graphic" width="230">
+
+		<h3>How many bags?</h3>
+			<select id="numberOfBagsId">
+				<option value="">No. of bags</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<br><br>
+			<input type="button" id="submitorder" value="Submit Order" onclick="totalCost()">
+			<p>Total Due: <input type="text" id="totalbox"></p>
+			<img src="images/coffeepile.png" alt="Coffee Pile" width="400" height="150">
+		<div id="footer"><hr>
+		Author: Andrew Oliver
+		</div>
+		</div>
+	</body>
+</html>

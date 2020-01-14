@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brine Seafood Shack</title>
+	<meta charset = "utf-8">
+	<link rel= "stylesheet" type = "text/css" href= "css/main.css">
+	<link rel= "stylesheet" type = "text/css" href= "css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+	<link rel="icon"
+			type="image/png"
+			href="images/brine-logo.png">
+</head>
+<div id="wrapper">
+<body>
+<header>
+<a href= "index.html"><img src = "images/brine-logo.png" alt = "Brine Logo" class = "brinelogo"></a>
+<nav>
+	<ul>
+		<li><span id="home"><a href="index.html">Home</a><span></li>
+		<li class="dropdown">
+			<a href= "javascript:void(0)" class="dropbtn">Menus</a>
+			<div class="dropdown-content">
+				<a href="images/dinnermenu.jpg" target="_blank">Dinner</a>
+				<a href="images/lunchmenu.jpg" target="_blank">Lunch</a>
+				<a href="images/kidsmenu.jpg" target="_blank">Kids</a>
+				<a href="images/winelist.jpg" target="_blank">Wine List</a>
+				
+			</div>
+		</li>
+		<li><a href= "gallery.html">Gallery</a></li>
+		<li><a href= "about.html">About Us</a></li>
+		<li><a href= "contact.html">Contact Us</a></li>
+		<li><a href= "shop.html">Gift Shop</a></li>
+	</ul>
+</nav>
+</header>
+<main>
+	<h1>Give A Bit Of The Beach</h1>
+<div class="shop">
+	<img src="images/brine-logo-card.jpg" alt="Gift Card" class="brine-logo-card">
+	<p>Give them a beach vacation without the travel headaches. $30.00</p>
+	<form class="submit" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+		<input type="hidden" name="desc1" id="desc1" value="Brine Gift Card">
+		<input type="hidden" name="cost1" id="cost1" value="30.00">
+		<input type="submit" value="Add to Cart" class="shopsubmit">
+	</form>
+
+	<div id="brineshirt">
+	<img src="images/brineshirt.JPG" alt="Brine shirt" class="brineshirt" >
+	<p>A Brine 3/4 sleeve tee shirt is great for a day at the beach. 100% cotton. $25.00</p>
+	<form class="submit" method="post" action="http://www.webdevfoundations.net/scripts/cart.asp">
+		<input type="hidden" name="desc2" id="desc2" value="Fish Creek ">
+		<input type="hidden" name="cost2" id="cost2" value="25.00">
+		<input type="submit" value="Add to Cart" class="shopsubmit">
+	</form>
+	</div>
+</div>
+	<a href="#top" class="top">Back To The Top</a>
+</main>
+<footer>
+	<button onclick="goBack()" class="previouspage">Previous Page</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script> <br>
+	<img src="images/Social_Caps.png" alt="social logos" class="social-icon" usemap="#socialmap">
+
+	<map name="socialmap">
+		<area shape="rect" coords="21,49,91,106" href="https://twitter.com/brineseafood" alt="Facbook">
+		<area shape="rect" coords="104,50,172,102" href="https://www.facebook.com/brineseafood" alt="Twitter">
+	</map>
+	<p>Copyright &copy; 2017 | By Andrew Oliver</p>
+	<img src="images/southern-fried-logo.jpg" alt="Chicken And The Egg" id="chicknegg"></a>
+</footer>
+</body>
+</div>
+
+
+</html>
